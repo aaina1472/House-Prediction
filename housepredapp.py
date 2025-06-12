@@ -9,6 +9,7 @@ from sklearn.preprocessing import StandardScaler
 
 # ======== Load Model and Pipeline ========
 model = load('Dragon.joblib')  # Your trained Decision Tree model
+dump(model, 'Dragon.joblib')
 
 # IMPORTANT: Feature order must match training
 feature_names = ['CRIM', 'ZN', 'INDUS', 'NOX', 'RM', 'AGE', 'DIS',
