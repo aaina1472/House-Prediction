@@ -32,7 +32,6 @@ st.title("🏠 Boston House Price Prediction App")
 st.write("Enter the house details below:")
 
 # Input fields
-input_array = np.array(inputs).reshape(1, -1)
 inputs = []
 for feature in feature_names:
     val = st.number_input(f"{feature}", step=0.1)
