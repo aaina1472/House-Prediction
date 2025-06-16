@@ -9,7 +9,6 @@ from sklearn.preprocessing import StandardScaler
 
 # ======== Load Model and Pipeline ========
 model = load('Dragon_load.joblib')  # Your trained Decision Tree model
-prediction = model.predict(input_array)
 
 
 # IMPORTANT: Feature order must match training
