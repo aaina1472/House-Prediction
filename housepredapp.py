@@ -41,5 +41,6 @@ for feature in feature_names:
 # Predict button
 if st.button("Predict Price"):
     input_array = np.array(inputs).reshape(1, -1)
-    prediction = model.predict(input_array)
+    input_prepared = preprocess_pipeline.transform(input_array)
+    prediction = model.predict(input_prepared)
     st.success(f"💰 Predicted House Price: ${prediction[0]*1000:,.2f}")
