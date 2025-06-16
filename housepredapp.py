@@ -8,7 +8,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler
 
 # ======== Load Model and Pipeline ========
-model = load('Dragon (2).joblib')  # Your trained Decision Tree model
+model = load('Dragon_load.joblib')  # Your trained Decision Tree model
 prediction = model.predict(input_array)
 
 
